@@ -1,0 +1,50 @@
+{
+  "name": "hadary/ignition-solution-provider",
+  "description": "This package adds hadary.ai as a solution provider for Laravel Ignition.",
+  "keywords": [
+    "laravel",
+    "flare",
+    "ignition"
+  ],
+  "homepage": "https://github.com/hadary-ai/ignition-solution-provider",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hadary",
+      "homepage": "https://hadary.ai",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "facade/ignition-contracts": "^1.0",
+    "illuminate/support": "5.8.* || ^6.0 || ^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hadary\\IgnitionSolutionProvider\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hadary\\IgnitionSolutionProvider\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hadary\\IgnitionSolutionProvider\\SolutionServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
